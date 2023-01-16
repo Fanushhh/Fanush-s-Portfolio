@@ -418,6 +418,7 @@ nav ul a:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2em;
+  justify-items: center;
 }
 @media screen and (max-width: 1200px) {
   .projects .projects-grid-container {
@@ -472,17 +473,20 @@ nav ul a:hover {
 .projects .projects-grid-container .project .project-description .project-links {
   display: flex;
   justify-content: space-between;
+  margin-top: 1em;
 }
 .projects .projects-grid-container .project .project-description .project-links a {
   text-decoration: none;
   color: #fff;
   transition: 0.2s ease-in-out;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
 }
 .projects .projects-grid-container .project .project-description .project-links i {
   margin-right: 0.5em;
 }
 .projects .projects-grid-container .project .project-description .project-links a:hover {
-  color: #FF4C29;
+  background-color: #334756;
 }
 
 fa-js:hover {
