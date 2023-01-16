@@ -1,0 +1,59 @@
+
+header{
+    background-color: $primary-dark-grey-blue;
+    position: sticky;
+    width: 100%;
+    
+}
+
+.hamburger{
+    position: absolute;
+    right:0;
+    display: none;
+    cursor: pointer;
+    transition: .2s linear;
+    @include for-tablet-down{
+        display: block;
+        right: 1em;
+    }
+}
+
+.hamburger:hover{
+    color:$primary-red;
+}
+
+
+nav{
+    font-family: $font-family;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    padding: 1em ;
+    max-width: 1500px;
+    background-color: $primary-dark-grey-blue;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li{
+            padding: 0 1em;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+        }
+        span{
+            color:$primary-red;
+        }
+        a:hover{
+            color:rgba(#fff, 0.5)
+        }
+        @include for-tablet-down{
+            display:none;
+        }
+    }
+
+    
+}

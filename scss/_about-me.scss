@@ -1,0 +1,64 @@
+.about-me-section{
+    flex-direction: row-reverse;
+    gap:150px;
+    line-height: 1.8;
+    padding: 0 2em;
+    .description-container{
+        max-width: 700px;
+        .about-me{
+            font-size: 1.5em;
+            font-family: $font-family;
+            font-weight: $font-weight-bold;
+            border-bottom: 2px solid $primary-red;
+            width: fit-content;
+            padding-right: 0;
+            margin-bottom: 1em;
+        }
+        h1{
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            line-height: 1.4;
+        }
+        p{
+            padding-right: 5em;
+            @include for-tablet-down{
+                padding-right: 0;
+            }
+        }
+        button{
+            border: none;
+            margin-top: 1.5em;
+            padding:0.5em 2em;
+            background-color:transparent;
+            border-bottom: 2px solid $primary-red;
+            border-left: 2px solid $primary-red;
+            color: #fff;
+            
+            font-size: 20px;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+        button:hover{
+            background-color: $primary-red;
+            
+        }
+        
+    }
+
+    @include for-tablet-down{
+        flex-direction: column;
+        gap:100px;
+    }
+}
+
+
+.profile-img-container{
+    max-width: 350px;
+    
+    
+    img{
+        
+        border-radius: 10px;
+        
+    }
+}
