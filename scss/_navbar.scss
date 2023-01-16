@@ -6,23 +6,31 @@ header{
     
 }
 
-.hamburger{
+.hamburger-container{
     position: absolute;
     right:0;
-    display: none;
     cursor: pointer;
-    transition: .2s linear;
+    display: none;
+    
     @include for-tablet-down{
         display: block;
         right: 1em;
+        
     }
+  
 }
 
 .hamburger:hover{
     color:$primary-red;
 }
 
-
+ul.show{
+    height: auto;
+    display: flex;
+}
+.rotate{
+    transform: rotate(180deg);
+}
 nav{
     font-family: $font-family;
     display: flex;
@@ -30,16 +38,24 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin:0 auto;
-    padding: 1em ;
-    max-width: 1500px;
+    padding: 1em 2em;
+    max-width: 1200px;
     background-color: $primary-dark-grey-blue;
+    
+      
     ul{
         list-style: none;
         display: flex;
         align-items: center;
+        padding: 0;
+
         li{
             padding: 0 1em;
+            @include for-tablet-down{
+                padding:1em;
+            }  
         }
+        
         a{
             text-decoration: none;
             color:#fff;
@@ -50,10 +66,21 @@ nav{
         a:hover{
             color:rgba(#fff, 0.5)
         }
+        
         @include for-tablet-down{
-            display:none;
+            display: none;
+            height: 0;
+            flex-direction: column;
+            padding-bottom: 1em;
+            position:absolute;
+            background-color: $primary-dark-grey-blue;
+            right:0;
+            top:60px;
+            width: 100%;
+            
         }
     }
-
-    
+ 
 }
+
+

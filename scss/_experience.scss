@@ -14,7 +14,7 @@
     }
     .experience-container{
         position: relative;
-        
+        width: 100%;
         .experience{
             padding:0.7em 3.125em;
             position:relative;
@@ -30,7 +30,7 @@
                 transform: rotate(45deg);
                 position: absolute;
                 z-index: 10;
-                left:-46px;
+                left:-48px;
                 top:60px; 
             }
             .timeline-dot-left{
@@ -41,13 +41,14 @@
                 transform: rotate(45deg);
                 position: fixed;
                 z-index: 10;
-                right:-74px;
+                right:-78px;
                 top:60px; 
             }
             .text-box{
                 background-color: $primary-dark-grey-blue;
                 padding:2em;
                 position: relative;
+                box-shadow: 0 15px 30px 1px rgba(#000, 0.3);
                 .title{
                     font-size: 1.125rem;
                     font-weight: $font-weight-bold;
@@ -61,6 +62,12 @@
                         padding-left: 1em;
                     }
                 }
+                .experience-date, .experience-desc{
+                    font-size: 12px;
+                    padding:0.5em 0;
+                    
+                }
+                
             }
             @include for-tablet-down{
                 width: 100%;
