@@ -4,6 +4,7 @@
 @import 'navbar';
 @import 'about-me';
 @import 'experience';
+@import 'projects';
 body{
     font-family: $font-family-secondary;
     background-color: $primary-dark-blue;
@@ -24,9 +25,8 @@ main{
 }
 .container{
     display: flex;
-    width: 1200px;
-    max-width: 100%;
-    margin:10em auto;
+    padding: 0 2em;
+    margin:5em auto;
     align-items: center;
     @include for-tablet-down{
         margin: 5em auto;

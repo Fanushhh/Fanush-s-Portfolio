@@ -209,7 +209,6 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
   gap: 5em;
-  padding: 0 2em;
 }
 .experience-section h1 {
   width: -webkit-fit-content;
@@ -400,6 +399,96 @@ nav ul a:hover {
     height: 100%;
   }
 }
+.projects {
+  flex-direction: column;
+  width: 100%;
+}
+.projects h1 {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #FF4C29;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: flex-start;
+}
+.projects .projects-grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2em;
+}
+@media screen and (max-width: 1200px) {
+  .projects .projects-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .projects .projects-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.projects .projects-grid-container .project {
+  background-color: #2C394B;
+  border-radius: 5px;
+  border-bottom: 2px solid #FF4C29;
+  max-width: 300px;
+}
+.projects .projects-grid-container .project .project-img-container {
+  height: 180px;
+  overflow: hidden;
+}
+.projects .projects-grid-container .project .project-img-container img {
+  border-radius: 5px 5px 0 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+  transition: 0.4s ease-in-out;
+}
+.projects .projects-grid-container .project img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.projects .projects-grid-container .project .project-description {
+  padding: 1.5em;
+  font-size: 14px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects .projects-grid-container .project .project-description .project-title {
+  font-size: 15px;
+  margin: 0.4em 0;
+  font-weight: 700;
+}
+.projects .projects-grid-container .project .project-description .project-skills {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+.projects .projects-grid-container .project .project-description .project-links {
+  display: flex;
+  justify-content: space-between;
+}
+.projects .projects-grid-container .project .project-description .project-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.projects .projects-grid-container .project .project-description .project-links i {
+  margin-right: 0.5em;
+}
+.projects .projects-grid-container .project .project-description .project-links a:hover {
+  color: #FF4C29;
+}
+
+fa-js:hover {
+  color: yellow;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #082032;
@@ -421,9 +510,8 @@ main {
 
 .container {
   display: flex;
-  width: 1200px;
-  max-width: 100%;
-  margin: 10em auto;
+  padding: 0 2em;
+  margin: 5em auto;
   align-items: center;
 }
 @media screen and (max-width: 1200px) {
