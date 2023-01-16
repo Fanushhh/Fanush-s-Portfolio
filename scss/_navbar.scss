@@ -24,9 +24,10 @@ header{
     color:$primary-red;
 }
 
-ul.show{
-    height: auto;
+.show{
+    opacity: 1;
     display: flex;
+    height: auto;
 }
 .rotate{
     transform: rotate(180deg);
