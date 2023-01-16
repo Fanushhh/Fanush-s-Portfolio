@@ -334,6 +334,10 @@ nav ul a:hover {
   border-right: 15px solid #2C394B;
   left: -10px;
 }
+.experience-section .experience-container .show {
+  opacity: 1;
+  display: flex;
+}
 .experience-section .experience-container::after {
   content: "";
   width: 3px;
