@@ -5,11 +5,14 @@
 @import 'about-me';
 @import 'experience';
 @import 'projects';
+@import 'contact-me';
+@import 'footer';
 body{
     font-family: $font-family-secondary;
     background-color: $primary-dark-blue;
     color: #fff;
     font-size: $font-size;
+    position: relative;
 }
 
 h1{
@@ -32,3 +35,34 @@ main{
         margin: 5em auto;
     }
 }
+
+// .time-container{
+//     position: fixed;
+//     right:50px;
+//     bottom:100px;
+//     width:250px;
+//     padding: 1em 2em;
+//     background-color: $primary-dark-grey-blue;
+//     text-align: center;
+//     z-index: 10;
+//     h1{
+//         font-size: 1.2rem;
+//     }
+//     p{
+//         margin-top: 1em;
+//         font-size: 1rem;
+        
+//     }
+//     // @include for-tablet-down{
+//     //     padding:0.5em 1em;
+//     //     bottom:50px;
+//     //    
+//     //     border: 1px solid rgba($primary-red, 0.5);
+//     //     h1{
+//     //         font-size: 0.9rem;
+//     //     }
+//     //     p{
+//     //         margin-top: 0.5em;
+//     //     }
+//     // }
+// }

@@ -27,8 +27,12 @@
                 transform: rotate(45deg);
                 position: absolute;
                 z-index: 10;
-                left:-48px;
-                top:60px; 
+                left:-46px;
+                top:50px; 
+                @include for-tablet-down{
+                    right:0;
+                    left:-15px;
+                }
             }
             .timeline-dot-left{
                 width: 10px;
@@ -38,8 +42,12 @@
                 transform: rotate(45deg);
                 position: fixed;
                 z-index: 10;
-                right:-78px;
-                top:60px; 
+                right: -78px;
+                top:50px; 
+                @include for-tablet-down{
+                    right:0;
+                    left:-15px;
+                }
             }
             .text-box{
                 background-color: $primary-dark-grey-blue;
