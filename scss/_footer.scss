@@ -1,8 +1,26 @@
 footer{
     background-color: $primary-dark-grey-blue;
+    padding: 1em 0;
+    .container{
+        margin:2rem auto;
+    }
 }
 
 .footer{
-    
+    display: flex;
+    justify-content: center;
+    gap:10rem;
     max-width: 1200px;
+    .footer-menu, .footer-socials{
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+        margin:0.3rem 0;
+    }
+    a:hover{
+        color:rgba(#fff, 0.5)
+    }
 }

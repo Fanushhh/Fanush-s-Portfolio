@@ -1,0 +1,39 @@
+.floating-socials{
+    position: fixed;
+    right:-15px;
+    top:40%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $primary-red;
+    z-index: 10;
+    border-bottom: 1px solid $primary-red;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 15px;
+    .social-container{
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+    i{  
+        left:-33px;
+        position: absolute;
+        padding:0.5rem;
+        margin-right: 1em;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    i:hover{
+        transform: scale(1.5);
+        color:$primary-red;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+
+    }
+
+    @include for-tablet-down{
+        display: none;
+    }
+}

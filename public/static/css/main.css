@@ -636,10 +636,69 @@ fa-js:hover {
 
 footer {
   background-color: #2C394B;
+  padding: 1em 0;
+}
+footer .container {
+  margin: 2rem auto;
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
   max-width: 1200px;
+}
+.footer .footer-menu, .footer .footer-socials {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.3rem 0;
+}
+.footer a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.floating-socials {
+  position: fixed;
+  right: -15px;
+  top: 40%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #FF4C29;
+  z-index: 10;
+  border-bottom: 1px solid #FF4C29;
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 15px;
+}
+.floating-socials .social-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.floating-socials i {
+  left: -33px;
+  position: absolute;
+  padding: 0.5rem;
+  margin-right: 1em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.floating-socials i:hover {
+  transform: scale(1.5);
+  color: #FF4C29;
+}
+.floating-socials a {
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .floating-socials {
+    display: none;
+  }
 }
 
 body {
