@@ -4,7 +4,7 @@
     line-height: 1.8;
     padding: 0 2em;
     .description-container{
-        max-width: 700px;
+        max-width: 70%;
         .about-me{
             font-size: 1.5rem;
             font-family: $font-family;
@@ -27,13 +27,13 @@
         }
         button{
             border: none;
-            margin-top: 1.5em;
+            margin-top: 1rem;
             padding:0.5em 2em;
             background-color:transparent;
             border-bottom: 2px solid $primary-red;
             border-left: 2px solid $primary-red;
             color: #fff;
-            
+            text-decoration: none;
             font-size: 1.2rem;
             cursor: pointer;
             transition: .5s ease-in-out;
@@ -41,6 +41,10 @@
         button:hover{
             background-color: $primary-red;
             
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
         }
         
     }
@@ -53,8 +57,7 @@
 
 
 .profile-img-container{
-    max-width: 350px;
-    
+    max-width: 30%;
     
     img{
         

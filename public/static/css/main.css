@@ -154,7 +154,7 @@ nav ul a:hover {
   padding: 0 2em;
 }
 .about-me-section .description-container {
-  max-width: 700px;
+  max-width: 70%;
 }
 .about-me-section .description-container .about-me {
   font-size: 1.5rem;
@@ -182,18 +182,23 @@ nav ul a:hover {
 }
 .about-me-section .description-container button {
   border: none;
-  margin-top: 1.5em;
+  margin-top: 1rem;
   padding: 0.5em 2em;
   background-color: transparent;
   border-bottom: 2px solid #FF4C29;
   border-left: 2px solid #FF4C29;
   color: #fff;
+  text-decoration: none;
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
 .about-me-section .description-container button:hover {
   background-color: #FF4C29;
+}
+.about-me-section .description-container a {
+  text-decoration: none;
+  color: inherit;
 }
 @media screen and (max-width: 1200px) {
   .about-me-section {
@@ -203,7 +208,7 @@ nav ul a:hover {
 }
 
 .profile-img-container {
-  max-width: 350px;
+  max-width: 30%;
 }
 .profile-img-container img {
   border-radius: 10px;
