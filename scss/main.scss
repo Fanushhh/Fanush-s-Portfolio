@@ -8,17 +8,28 @@
 @import 'contact-me';
 @import 'footer';
 @import 'socials';
+@import 'scrollbar';
 body{
     font-family: $font-family-secondary;
     background-color: $primary-dark-blue;
     color: #fff;
     font-size: $font-size;
     position: relative;
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $primary-dark-grey-blue;
+        border-radius: 4px;
+    }
+    h1{
+        font-family: $font-family;
+    }
 }
 
-h1{
-    font-family: $font-family;
-}
+
+
 
 main{
     
@@ -38,6 +49,7 @@ main{
         margin: 5em auto;
     }
 }
+
 
 // .time-container{
 //     position: fixed;

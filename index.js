@@ -5,6 +5,9 @@ const timeContainer = document.querySelector('.time-container');
 hamburgerButton.addEventListener('click', function(){
     navbar.classList.toggle('show');
 })
+
+
+
 // function startTimer(duration, display) {
 //     var timer = duration, minutes, seconds;
 //     setInterval(function () {

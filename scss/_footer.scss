@@ -23,4 +23,8 @@ footer{
     a:hover{
         color:rgba(#fff, 0.5)
     }
+    @include for-mobile-down{
+        justify-content: space-between;
+        gap:0;
+    }
 }
