@@ -154,7 +154,7 @@ nav ul a:hover {
   padding: 0 2em;
 }
 .about-me-section .description-container {
-  max-width: 70%;
+  max-width: 700px;
 }
 .about-me-section .description-container .about-me {
   font-size: 1.5rem;
@@ -208,7 +208,7 @@ nav ul a:hover {
 }
 
 .profile-img-container {
-  max-width: 30%;
+  max-width: 350px;
 }
 .profile-img-container img {
   border-radius: 10px;
