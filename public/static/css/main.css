@@ -518,12 +518,12 @@ fa-js:hover {
   background-position: right;
   height: 525px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   border-radius: 10px;
 }
-.contact-me .get-in-touch-container h2 {
-  margin-bottom: 1rem;
+.contact-me .get-in-touch-container a {
+  color: lightblue;
 }
 @media screen and (max-width: 1200px) {
   .contact-me .get-in-touch-container {

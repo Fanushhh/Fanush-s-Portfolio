@@ -20,13 +20,12 @@
         background-position: right;
         height: 525px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
         border-radius: 10px;
         
-        h2{
-            margin-bottom: 1rem;
-
+        a{
+            color: lightblue;
         }
         @include for-tablet-down{
             width: 100%;
