@@ -11,18 +11,25 @@
     .projects-grid-container{
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         gap:2em;
         justify-items: center;
-        @include for-tablet-down{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr;
-        }
-        @include for-mobile-down{
-            grid-template-columns: 1fr;
 
+        .design-projects, .functional-projects{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:1rem;
+            @include for-tablet-down{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+            }
+            @include for-mobile-down{
+                grid-template-columns: 1fr;
+    
+            }
         }
+
+        
         .project{
             background-color: $primary-dark-grey-blue;
             border-radius:5px;

@@ -66,7 +66,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 header {
   background-color: #2C394B;
-  position: -webkit-sticky;
   position: sticky;
   width: 100%;
 }
@@ -161,7 +160,6 @@ nav ul a:hover {
   font-family: "Roboto Mono", sans-serif;
   font-weight: 700;
   border-bottom: 2px solid #FF4C29;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding-right: 0;
@@ -220,7 +218,6 @@ nav ul a:hover {
   gap: 5em;
 }
 .experience-section h1 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 2px solid #FF4C29;
@@ -236,8 +233,7 @@ nav ul a:hover {
   padding: 0.7em 3.125em;
   position: relative;
   width: 40%;
-  -webkit-animation: slowShow 1s linear forwards;
-          animation: slowShow 1s linear forwards;
+  animation: slowShow 1s linear forwards;
   opacity: 0;
   z-index: 0;
 }
@@ -308,20 +304,16 @@ nav ul a:hover {
   }
 }
 .experience-section .experience-container .experience:nth-child(1) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 .experience-section .experience-container .experience:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 .experience-section .experience-container .experience:nth-child(3) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 .experience-section .experience-container .experience:nth-child(4) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation-delay: 4s;
 }
 .experience-section .experience-container .experience-left {
   left: 0;
@@ -366,27 +358,11 @@ nav ul a:hover {
   top: 0;
   margin-left: -3em;
   z-index: -1;
-  -webkit-animation: moveline 1s linear forwards;
-          animation: moveline 1s linear forwards;
+  animation: moveline 1s linear forwards;
 }
 @media screen and (max-width: 1200px) {
   .experience-section .experience-container::after {
     left: 30px;
-  }
-}
-
-@-webkit-keyframes slowShow {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(-15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
 
@@ -402,14 +378,6 @@ nav ul a:hover {
   100% {
     opacity: 1;
     transform: translateY(0px);
-  }
-}
-@-webkit-keyframes moveline {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
   }
 }
 @keyframes moveline {
@@ -428,7 +396,6 @@ nav ul a:hover {
   width: 100%;
   margin-bottom: 1.5em;
   border-bottom: 2px solid #FF4C29;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   align-self: flex-start;
@@ -436,19 +403,23 @@ nav ul a:hover {
 .projects .projects-grid-container {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 2em;
   justify-items: center;
 }
+.projects .projects-grid-container .design-projects, .projects .projects-grid-container .functional-projects {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
 @media screen and (max-width: 1200px) {
-  .projects .projects-grid-container {
+  .projects .projects-grid-container .design-projects, .projects .projects-grid-container .functional-projects {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
   }
 }
 @media screen and (max-width: 700px) {
-  .projects .projects-grid-container {
+  .projects .projects-grid-container .design-projects, .projects .projects-grid-container .functional-projects {
     grid-template-columns: 1fr;
   }
 }
@@ -609,9 +580,6 @@ fa-js:hover {
   font-weight: 700;
 }
 .contact-me .contact-me-form ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.contact-me .contact-me-form :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .contact-me .contact-me-form ::placeholder {
