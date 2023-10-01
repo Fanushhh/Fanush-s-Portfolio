@@ -1,31 +1,49 @@
-const hamburgerButton = document.querySelector('.hamburger');
-const navbar = document.querySelector('nav ul');
-const timeContainer = document.querySelector('.time-container');
-// const timeOnSite = timeContainer.querySelector('p');
-hamburgerButton.addEventListener('click', function(){
-    navbar.classList.toggle('show');
-})
+import {projectDetails} from "./data.js";
 
+const hamburgerButton = document.querySelector(".hamburger");
+const navbar = document.querySelector("nav ul");
+const projectContainer = document.querySelector(".projects-grid-container");
+hamburgerButton.addEventListener("click", function () {
+  navbar.classList.toggle("show");
+});
 
+function loadData(data) {
+  data.map((project) => {
+    return (projectContainer.innerHTML += `
+        <div class="project">
+                <div class="project-img-container">
+                  <img
+                    src=${project.img}
+                    alt=${project.description}
+                  />
+                  <div class="project-links">
+                    <a target="_blank" href=${project.github}
+                      ></i>github</a
+                    >
+                    <a target="_blank" href=${project.url}
+                      >live site</a
+                    >
+                  </div>
+                </div>
+                <div class="project-description">
+                  <div class="project-details">
+                    <p class="project-title">
+                      ${project.name}
+                      
+                    </p>
+                    
+                  </div>
+                  <div class="project-skills">
+                    ${project.tech.map((tech) => {
+                      return `<span> ${tech}</span>`;
+                    })}
+                  </div>
+                  
+                </div>
+              </div>
+        
+        `);
+  });
+}
 
-// function startTimer(duration, display) {
-//     var timer = duration, minutes, seconds;
-//     setInterval(function () {
-//         minutes = parseInt(timer / 60, 10);
-//         seconds = parseInt(timer % 60, 10);
-
-//         minutes = minutes < 10 ? "0" + minutes : minutes;
-//         seconds = seconds < 10 ? "0" + seconds : seconds;
-
-//         display.textContent = minutes + ":" + seconds;
-
-//         if (++timer < 0) {
-//             timer = duration;
-//         }
-//     }, 1000);
-// }
-
-// // Example usage:
-// var startTime = 0;
-
-// document.addEventListener("DOMContentLoaded", startTimer(startTime, timeOnSite));
+loadData(projectDetails);
