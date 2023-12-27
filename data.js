@@ -3,8 +3,8 @@ export const projectDetails = [
         id:crypto.randomUUID(),
         name:'Makeup website',
         description:'A website for makeup',
-        url:'https://viktoriamua.com',
         img:"images/presentation.png",
+        url:'https://viktoriamua.com',
         github:'https://github.com/Fanushhh/Make-up-website',
         tech: ['HTML', 'CSS', 'JavaScript', 'React']
         

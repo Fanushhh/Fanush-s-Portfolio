@@ -26,11 +26,14 @@
         .project-img-container{
             position:relative;
             &:hover{
-                img{
-                    opacity: 0.5;
-                }
+               
                 .project-links{
+                    background-color:rgba(0,0,0,0.5);
+                    width: 100%;
+                    height: 100%;
                     display:flex;
+                    justify-content: center;
+                    align-items: center;
                     gap: 2rem;
                     color:white;
                 }

@@ -1,9 +1,10 @@
 
 header{
     background-color: $primary-dark-grey-blue;
-    position: sticky;
+    position: fixed;
     width: 100%;
-    
+    top:0;
+    z-index: 100;
 }
 
 .hamburger-container{
