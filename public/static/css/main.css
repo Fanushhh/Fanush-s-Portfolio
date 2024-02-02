@@ -32,7 +32,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-image: url("../../../images/topography.svg");
+  background-image: url("topography.svg");
   background-size: 500px;
   background-repeat: repeat;
 }
