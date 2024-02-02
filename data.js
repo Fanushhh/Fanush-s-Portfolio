@@ -3,7 +3,7 @@ export const projectDetails = [
         id:crypto.randomUUID(),
         name:'Makeup website',
         description:'A website for makeup',
-        img:"images/presentation.png",
+        img:"./public/images/presentation.png",
         url:'https://viktoriamua.com',
         github:'https://github.com/Fanushhh/Make-up-website',
         tech: ['HTML', 'CSS', 'JavaScript', 'React']
@@ -15,7 +15,7 @@ export const projectDetails = [
         description:'A wonderfully designed portfolio website',
         url:'https://fluffy-bonbon-67a8ef.netlify.app',
         github:'https://github.com/Fanushhh/Single-page-portfolio',
-        img:"./images/portfolio-website.png",
+        img:"./public/images/portfolio-website.png",
         tech: ['HTML', 'CSS', 'JavaScript', 'React']
         
     },
@@ -25,7 +25,7 @@ export const projectDetails = [
         description:'A website for calculating body mass index and learning more about how to manage your weight.',
         url:'https://meek-cuchufli-14c9e6.netlify.app',
         github:'https://github.com/Fanushhh/bmi-calculator',
-        img:"images/body-mass-index.png",
+        img:"./public/images/body-mass-index.png",
         tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS']
         
     },
@@ -35,7 +35,7 @@ export const projectDetails = [
         description:'A website created for a client who is a massage therapist.',
         url:'https://fanushhh.github.io/Nurtured-spirit/',
         github:'https://github.com/Fanushhh/Nurtured-spirit',
-        img:"images/nurtured-spirit.png",
+        img:"./public/images/nurtured-spirit.png",
         tech: ['HTML', 'CSS', 'JavaScript', 'React']
         
     },
@@ -45,7 +45,7 @@ export const projectDetails = [
         description:'My first attempt at creating a portfolio website.',
         url:'https://fanushhh.github.io/Fanush-s-Portfolio/',
         github:'https://github.com/Fanushhh/Fanush-s-Portfolio',
-        img:"images/old-portfolio.png",
+        img:"./public/images/old-portfolio.png",
         tech: ['HTML', 'CSS', 'JavaScript', 'SASS']
         
     },
@@ -55,7 +55,7 @@ export const projectDetails = [
         description:'A wonderful website suited for any artist, which includes navigation to different pages as well as custom animations.',
         url:'https://aquamarine-arithmetic-1b72c1.netlify.app',
         github:'https://github.com/Fanushhh/ignite-website',
-        img:"images/ignite-website.png",
+        img:"./public/images/ignite-website.png",
         tech: ['HTML', 'CSS', 'React', 'Styled Components', 'Framer Motion', 'React Router'],
         
     },
@@ -65,7 +65,7 @@ export const projectDetails = [
         description:'Using React, I created a music player app which allows you to play, pause, skip and go back to the previous song.',
         url:'https://fanushhh.github.io/Music-player-react/',
         github:'https://github.com/Fanushhh/Music-player-react',
-        img:"images/music-app.png",
+        img:"./public/images/music-app.png",
         tech: ['HTML', 'CSS', 'React', 'Styled Components'],
         
     },
@@ -75,7 +75,7 @@ export const projectDetails = [
         description:'A newsletter page displaying the current news in tech.',
         url:'https://bejewelled-vacherin-aba781.netlify.app',
         github:'https://github.com/Fanushhh/news-homepage-figma',
-        img:"images/newsletter.png",
+        img:"./public/images/newsletter.png",
         tech: ['HTML', 'CSS', 'React', 'Typescript', 'Tailwind CSS'],
         
     },
