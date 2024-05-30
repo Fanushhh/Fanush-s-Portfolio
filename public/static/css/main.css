@@ -436,9 +436,9 @@ nav ul a:hover {
 }
 .projects .projects-grid-container .project-img-container img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 320px;
 }
 .projects .projects-grid-container .project-links {
   display: none;

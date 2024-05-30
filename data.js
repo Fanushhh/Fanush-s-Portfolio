@@ -1,6 +1,15 @@
 export const projectDetails = [
     {
         id:crypto.randomUUID(),
+        name:'NedCom Imobiliare',
+        description:'A website for a real estate company',
+        img:"./public/images/nedcom.png",
+        url:'https://ned-com.vercel.app/',
+        github:'https://github.com/Fanushhh/ned-com',
+        tech:['HTML', 'CSS Modules', 'Next.js', 'React','API'],
+    },
+    {
+        id:crypto.randomUUID(),
         name:'Makeup website',
         description:'A website for makeup',
         img:"./public/images/presentation.png",
@@ -9,6 +18,7 @@ export const projectDetails = [
         tech: ['HTML', 'CSS', 'JavaScript', 'React']
         
     },
+    
     {
         id:crypto.randomUUID(),
         name:'Portfolio website',
@@ -69,15 +79,15 @@ export const projectDetails = [
         tech: ['HTML', 'CSS', 'React', 'Styled Components'],
         
     },
-    {
-        id:crypto.randomUUID(),
-        name:'Newsletter page',
-        description:'A newsletter page displaying the current news in tech.',
-        url:'https://bejewelled-vacherin-aba781.netlify.app',
-        github:'https://github.com/Fanushhh/news-homepage-figma',
-        img:"./public/images/newsletter.png",
-        tech: ['HTML', 'CSS', 'React', 'Typescript', 'Tailwind CSS'],
+    // {
+    //     id:crypto.randomUUID(),
+    //     name:'Newsletter page',
+    //     description:'A newsletter page displaying the current news in tech.',
+    //     url:'https://bejewelled-vacherin-aba781.netlify.app',
+    //     github:'https://github.com/Fanushhh/news-homepage-figma',
+    //     img:"./public/images/newsletter.png",
+    //     tech: ['HTML', 'CSS', 'React', 'Typescript', 'Tailwind CSS'],
         
-    },
+    // },
 
 ]
