@@ -44,7 +44,7 @@ main{
 .container{
     display: flex;
     padding: 0 2em;
-    margin:10em auto;
+    margin:5em auto;
     align-items: center;
     @include for-tablet-down{
         margin: 5em auto;
