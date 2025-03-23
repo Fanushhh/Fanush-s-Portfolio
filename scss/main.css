@@ -166,6 +166,7 @@ nav ul a:hover {
   font-family: "Roboto Mono", sans-serif;
   font-weight: 700;
   border-bottom: 2px solid #FF4C29;
+  width: -moz-fit-content;
   width: fit-content;
   padding-right: 0;
   margin-bottom: 1em;
@@ -223,6 +224,7 @@ nav ul a:hover {
   gap: 5em;
 }
 .experience-section h1 {
+  width: -moz-fit-content;
   width: fit-content;
   border-bottom: 2px solid #FF4C29;
   padding-bottom: 0.5em;
@@ -400,6 +402,7 @@ nav ul a:hover {
   width: 100%;
   margin-bottom: 1.5em;
   border-bottom: 2px solid #FF4C29;
+  width: -moz-fit-content;
   width: fit-content;
   align-self: flex-start;
 }
@@ -434,7 +437,8 @@ nav ul a:hover {
 }
 .projects .projects-grid-container .project-img-container img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 320px;
 }
 .projects .projects-grid-container .project-links {
@@ -446,6 +450,7 @@ nav ul a:hover {
 }
 .projects .projects-grid-container .project-links a {
   color: white;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -551,6 +556,9 @@ fa-js:hover {
 .contact-me .contact-me-form label {
   font-size: 1rem;
   font-weight: 700;
+}
+.contact-me .contact-me-form ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 .contact-me .contact-me-form ::placeholder {
   color: rgba(255, 255, 255, 0.6);

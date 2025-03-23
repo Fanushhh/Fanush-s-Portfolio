@@ -1,10 +1,19 @@
 export const projectDetails = [
     {
         id:crypto.randomUUID(),
+        name:'Personal finance app',
+        description:'A website for managing your personal finances',
+        img:"./public/images/personal-finance.png",
+        url:'https://personal-finance-app-delta.vercel.app',
+        github:'https://github.com/Fanushhh/personal-finance-app',
+        tech:['NextJS', 'Tailwind CSS', 'Tanstack Query','SSR'],
+    },
+    {
+        id:crypto.randomUUID(),
         name:'NedCom Imobiliare',
         description:'A website for a real estate company',
         img:"./public/images/nedcom.png",
-        url:'https://ned-com.vercel.app/',
+        url:'https://personal-finance-app-delta.vercel.app',
         github:'https://github.com/Fanushhh/ned-com',
         tech:['HTML', 'CSS Modules', 'Next.js', 'React','API'],
     },
@@ -37,16 +46,6 @@ export const projectDetails = [
         github:'https://github.com/Fanushhh/bmi-calculator',
         img:"./public/images/body-mass-index.png",
         tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS']
-        
-    },
-    {
-        id:crypto.randomUUID(),
-        name:'Massage website',
-        description:'A website created for a client who is a massage therapist.',
-        url:'https://fanushhh.github.io/Nurtured-spirit/',
-        github:'https://github.com/Fanushhh/Nurtured-spirit',
-        img:"./public/images/nurtured-spirit.png",
-        tech: ['HTML', 'CSS', 'JavaScript', 'React']
         
     },
     {
