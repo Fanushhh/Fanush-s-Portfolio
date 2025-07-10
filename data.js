@@ -13,7 +13,7 @@ export const projectDetails = [
         name:'NedCom Imobiliare',
         description:'A website for a real estate company',
         img:"./public/images/nedcom.png",
-        url:'https://personal-finance-app-delta.vercel.app',
+        url:'https://ned-com.vercel.app/',
         github:'https://github.com/Fanushhh/ned-com',
         tech:['HTML', 'CSS Modules', 'Next.js', 'React','API'],
     },
